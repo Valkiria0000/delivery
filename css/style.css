@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Roboto", sans-serif;
 }
+
 .container {
   max-width: 1194px;
   margin: auto;
@@ -32,8 +34,8 @@ body {
 .search-input {
   background-color: transparent;
   border: none;
-  max-width: 100%;
-  padding: 13px 20px;
+  width: 100%;
+  padding: 13px 50px 13px 20px;
 }
 
 .search-button {
@@ -57,6 +59,7 @@ body {
   line-height: 16px;
   color: #000000;
 }
+
 .shoping-cart {
   position: relative;
   width: 49px;
@@ -80,4 +83,148 @@ body {
   line-height: 9px;
   padding: 5px;
   display: block;
+}
+
+.slide {
+  border-radius: 20px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+}
+
+.slide-text-light,
+.card-text-light {
+  color: white;
+}
+
+.slide-summer {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/summer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.slide-content {
+  max-width: 400px;
+}
+
+.slide-title {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 51px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.slide-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+
+.button-primary {
+  background-color: #f47322;
+  color: #ffffff;
+}
+
+.button {
+  border-radius: 25px;
+  padding: 12px 50px;
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.promo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 570px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sweet-basket {
+  width: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/card1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.choice {
+  width: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/card2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-top: 4px;
+  margin-bottom: 21px;
+}
+
+.cadr-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  max-width: 200px;
+}
+
+.card-price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.card-delivery {
+  font-weight: 500;
+  display: block;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.button-default {
+  background: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #5f5f61;
 }
