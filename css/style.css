@@ -150,20 +150,22 @@ body {
   padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  margin: -20px;
 }
 
 .card {
   border-radius: 20px;
+  margin: 20px;
   padding: 32px;
   max-width: 570px;
   min-height: 380px;
   display: flex;
+  flex: 50%;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .sweet-basket {
-  width: 100%;
   background: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.43) 40.45%,
@@ -176,13 +178,12 @@ body {
 }
 
 .choice {
-  width: 100%;
   background: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.43) 40.45%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(img/card2.png);
+    url(../img/card2.png);
   background-repeat: no-repeat;
   background-size: cover;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -227,4 +228,165 @@ body {
   font-size: 16px;
   line-height: 23px;
   color: #5f5f61;
+}
+
+.delivery-week {
+  padding: 100px 0;
+}
+
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.delivery-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-bottom: 47px;
+  margin-top: 0;
+}
+
+.delivery-card {
+  position: relative;
+  margin: 15px;
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden; /*почитать про свойство*/
+}
+
+.delivery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*почитать про свойство*/
+}
+
+.delivery-tag {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494f;
+  padding: 5px 10px;
+}
+
+.tag-health {
+  background: #d0fd89;
+}
+
+.tag-vega {
+  background: #aebc41;
+}
+
+.tag-meat {
+  background: #b86b78;
+}
+
+.tag-chiken {
+  background: #d68334;
+}
+
+.tag-fish {
+  background: #cd6255;
+}
+
+.tag-kids {
+  background: #fffdbf;
+}
+
+.tag-parrents {
+  background: #f6fdc8;
+}
+
+.tag-holiday {
+  background: #fef7fe;
+}
+
+.section-grey {
+  background: #f6f6f6;
+}
+
+.category {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.tabs {
+  display: flex;
+  margin: 0;
+  padding: 0em;
+  list-style-type: none;
+}
+
+.tabs-link {
+  /*закончила здесь  26мин */
+}
+.tabs-card {
+  max-width: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.tabs-image {
+  max-width: 100%;
+}
+
+.tabs-card-content {
+  padding: 23px;
+}
+
+.tabs-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.tabs-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+
+.tabs-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs-price {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tabs-weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+}
+
+.button-outline {
+  padding: 15px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f37321;
+  border: 2px solid #f37321;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 33px;
 }
