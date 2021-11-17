@@ -96,10 +96,29 @@ body {
 
 .slide {
   border-radius: 20px;
-  min-height: 400px;
+  min-height: 500px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   padding: 100px;
+}
+
+.sliders-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.slider-button {
+  cursor: pointer;
+}
+.swiper {
+  position: relative;
 }
 
 .slide-text-light,
@@ -114,6 +133,30 @@ body {
       rgba(0, 0, 0, 0) 100%
     ),
     url(../img/summer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.slide-autumn {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/autumn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.slide-vitamins {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/vitamins.png);
   background-repeat: no-repeat;
   background-size: cover;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -347,6 +390,7 @@ body {
 .tabs-content {
   display: flex;
   justify-content: space-between;
+  margin: -15px;
 }
 
 .tabs-link {
@@ -366,7 +410,7 @@ body {
   max-width: 270px;
   border-radius: 20px;
   overflow: hidden;
-  margin-right: 25px;
+  margin: 15px;
   background-color: white;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
 }
@@ -517,7 +561,84 @@ body {
   align-items: center;
   margin-left: auto;
 }
+
 .social-link {
   margin-left: 20px;
   text-decoration: none;
+}
+
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .tabs-content,
+  .advantage-tabs {
+    flex-wrap: wrap;
+  }
+
+  .delivery-week {
+    padding: 50px 0;
+  }
+  .tabs-card,
+  .advantage-tab {
+    max-width: 45%;
+  }
+  .advantage-tab {
+    margin-bottom: 40px;
+  }
+
+  .advantage {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .slide {
+    padding: 50px;
+  }
+
+  .card {
+    min-height: 360px;
+  }
+
+  .delivery-card {
+    width: 45%;
+  }
+
+  .footer-logo {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .search-form {
+    order: 5;
+    margin: 15px 5px;
+  }
+
+  .promo {
+    flex-wrap: wrap;
+  }
 }
