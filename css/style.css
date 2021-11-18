@@ -530,7 +530,7 @@ body {
 }
 
 .footer {
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
   background: #f6f6f6;
 }
 
@@ -640,5 +640,56 @@ body {
 
   .promo {
     flex-wrap: wrap;
+  }
+
+  .slide {
+    min-height: auto;
+  }
+
+  .delivery-card {
+    margin: 10px;
+  }
+
+  .tabs-card {
+    margin: 10px;
+  }
+
+  .social-link {
+    margin-left: 10px;
+  }
+
+  .footer-link {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .delivery-card {
+    width: 100%;
+    height: 300px;
+  }
+
+  .tabs-card {
+    width: 100%;
+  }
+
+  .footer-logo {
+    width: 128px;
+  }
+
+  .footer-nav {
+    margin-left: 30px;
+  }
+  .advantage {
+    margin-top: 50px;
   }
 }
