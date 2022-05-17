@@ -5,7 +5,9 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
+a {
+  transition: all 0.3s ease-in;
+}
 .container {
   max-width: 1194px;
   margin: auto;
@@ -22,8 +24,9 @@ body {
   cursor: pointer;
   border-radius: 50px;
   background: #ebebeb;
+  transition: all 0.5s ease;
 }
-.auth:active {
+.auth:hover {
   background-color: #f37321;
   color: #000000;
 }
@@ -184,8 +187,13 @@ body {
 .button-primary {
   background-color: #f47322;
   color: #ffffff;
+  transition: all 0.5s ease;
 }
 
+.button-primary:hover {
+  background-color: #ffffff;
+  color: #141313;
+}
 .button {
   border-radius: 25px;
   padding: 12px 50px;
@@ -280,8 +288,14 @@ body {
   font-size: 16px;
   line-height: 23px;
   color: #5f5f61;
+  transition: all 0.5s ease-in;
 }
 
+.button-default:hover {
+  box-shadow: 0px 6px 10px rgba(238, 238, 238, 0.71);
+  background-color: #f47322;
+  color: #ffffff;
+}
 .delivery-week {
   padding: 100px 0;
 }
@@ -421,6 +435,8 @@ body {
 
 .tabs-card-content {
   padding: 23px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tabs-title {
@@ -470,9 +486,10 @@ body {
   background-color: transparent;
   border-radius: 33px;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
-.button-outline:active {
+.button-outline:hover {
   background-color: #f37321;
   color: #ffffff;
 }
@@ -482,11 +499,15 @@ body {
   margin-top: 60px;
   width: 315px;
   display: block;
+  transition: all 0.5s ease;
 }
-
+.button-center:hover {
+  background-color: #f37321;
+  color: #ffffff;
+}
 .advantage {
   margin-top: 100px;
-  margin-bottom: 202px;
+  margin-bottom: 100px;
 }
 
 .advantage-title-icon {
